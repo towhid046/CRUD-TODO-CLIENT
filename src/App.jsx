@@ -9,7 +9,7 @@ function App() {
     const title = e.target.title.value;
     const todo = { title };
 
-    fetch("http://localhost:5000/todos", {
+    fetch("https://todo-crud-server.vercel.app/todos", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(todo),

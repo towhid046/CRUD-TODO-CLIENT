@@ -19,12 +19,12 @@ const routes = createBrowserRouter([
       {
         path: "/",
         element: <Todos />,
-        loader: () => fetch("http://localhost:5000/todos"),
+        loader: () => fetch("https://todo-crud-server.vercel.app/todos"),
       },
       {
         path: "/update-todo/:id",
         element: <UpdateTodo />,
-        loader: ({params}) => fetch(`http://localhost:5000/todos/${params.id}`),
+        loader: ({params}) => fetch(`https://todo-crud-server.vercel.app/todos/${params.id}`),
       },
     ],
   },

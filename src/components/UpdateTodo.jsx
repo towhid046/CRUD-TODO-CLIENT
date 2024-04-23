@@ -11,7 +11,7 @@ const UpdateTodo = () => {
     const title = e.target.title.value;
     const updateTodo = { title };
 
-    fetch(`http://localhost:5000/update-todo/${todo._id}`, {
+    fetch(`https://todo-crud-server.vercel.app/update-todo/${todo._id}`, {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(updateTodo),

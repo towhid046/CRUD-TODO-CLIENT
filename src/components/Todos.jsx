@@ -8,7 +8,7 @@ const Todos = () => {
   const [todos, setTodos] = useState(initialTodos);
 
   const handleRemoveTodo = (id) => {
-    fetch(`http://localhost:5000/todos/${id}`, {
+    fetch(`https://todo-crud-server.vercel.app/todos/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
